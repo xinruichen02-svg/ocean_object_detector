@@ -54,6 +54,7 @@
 ## 我准备做哪些工程实践
 
 - 整理水下目标检测相关数据集信息。
+- 筛选贝壳类、海参类、海胆类、海星类、石头/底质类等静态物体数据集。
 - 手动准备一个小规模 YOLO 格式样例数据集。
 - 跑通一个最小 YOLO baseline。
 - 记录训练、验证和推理过程。
@@ -65,14 +66,17 @@
 ## 项目结构说明
 
 ```text
-docs/          学习目标、路线图、数据集记录、实验记录和问题记录
-configs/       数据集、模型和实验配置说明
-data/          原始数据、处理后数据和 YOLO 格式数据说明
-src/           后续代码模块位置，目前只保留说明文档
-experiments/   baseline、增强、小目标、跟踪等实验记录
-results/       图表、日志、预测结果等实验输出
-notebooks/     数据可视化、训练记录和结果分析笔记
+Underwater-Robot-Object-Detection/
+├── README.md
+├── projects/
+│   └── underwater_static_object_detection/  正式水下静态物体识别项目
+├── learning/                              通用学习路线和知识笔记
+└── examples/
+    └── yolo_toy/                           独立的 YOLO 玩具测试项目
 ```
+
+三部分按用途隔离：正式项目不存放玩具数据，学习区不存放实验输出，
+玩具项目不作为正式水下实验的一部分。
 
 ## 后续开发路线
 
@@ -84,6 +88,18 @@ notebooks/     数据可视化、训练记录和结果分析笔记
 6. 尝试水下增强和小目标检测相关改进。
 7. 扩展到视频检测、跟踪和机器人感知输出。
 
+## 正式项目入口
+
+- [水下静态物体识别项目](projects/underwater_static_object_detection/README.md)
+- [正式数据集调研](projects/underwater_static_object_detection/docs/公开数据集调研.md)
+- [正式类别设计](projects/underwater_static_object_detection/docs/类别设计.md)
+
+## 学习与测试入口
+
+- [通用学习区](learning/README.md)
+- [YOLO 数据格式学习笔记](learning/yolo_format_notes.md)
+- [YOLO 玩具测试项目](examples/yolo_toy/README.md)
+
 ## 当前不做什么
 
 当前阶段不写论文。
@@ -91,4 +107,3 @@ notebooks/     数据可视化、训练记录和结果分析笔记
 当前阶段不直接训练大模型。
 当前阶段不一次性实现完整系统。
 当前阶段重点是理解目标检测流程，建立项目结构，逐步掌控代码。
-

@@ -1,0 +1,6 @@
+path: examples/yolo_toy/dataset
+train: images/train
+val: images/val
+
+names:
+  0: toy_object
