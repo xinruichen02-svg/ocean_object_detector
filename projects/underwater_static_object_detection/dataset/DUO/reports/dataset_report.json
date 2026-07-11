@@ -1,0 +1,47 @@
+{
+  "seed": 42,
+  "val_ratio": 0.15,
+  "classes": {
+    "0": "holothurian",
+    "1": "echinus",
+    "2": "scallop",
+    "3": "starfish"
+  },
+  "splits": {
+    "train": {
+      "images": 5670,
+      "instances": {
+        "holothurian": 5784,
+        "echinus": 36471,
+        "scallop": 1446,
+        "starfish": 10727
+      }
+    },
+    "val": {
+      "images": 1001,
+      "instances": {
+        "holothurian": 1024,
+        "echinus": 6483,
+        "scallop": 261,
+        "starfish": 1801
+      }
+    },
+    "test": {
+      "images": 1111,
+      "instances": {
+        "holothurian": 1079,
+        "echinus": 7201,
+        "scallop": 217,
+        "starfish": 2020
+      }
+    }
+  },
+  "conversion": {
+    "train_source_annotations": 63998,
+    "test_source_annotations": 10517,
+    "train_clipped_boxes": 846,
+    "test_clipped_boxes": 106,
+    "train_invalid_boxes_skipped": 1,
+    "test_invalid_boxes_skipped": 0
+  }
+}

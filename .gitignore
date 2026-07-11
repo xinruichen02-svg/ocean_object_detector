@@ -1,17 +1,11 @@
-projects/underwater_static_object_detection/dataset/DUO/raw/*
-!projects/underwater_static_object_detection/dataset/DUO/raw/.gitkeep
-projects/underwater_static_object_detection/dataset/DUO/images/train/*
-!projects/underwater_static_object_detection/dataset/DUO/images/train/.gitkeep
-projects/underwater_static_object_detection/dataset/DUO/images/val/*
-!projects/underwater_static_object_detection/dataset/DUO/images/val/.gitkeep
-projects/underwater_static_object_detection/dataset/DUO/images/test/*
-!projects/underwater_static_object_detection/dataset/DUO/images/test/.gitkeep
 projects/underwater_static_object_detection/dataset/DUO/labels/train/*
 !projects/underwater_static_object_detection/dataset/DUO/labels/train/.gitkeep
 projects/underwater_static_object_detection/dataset/DUO/labels/val/*
 !projects/underwater_static_object_detection/dataset/DUO/labels/val/.gitkeep
 projects/underwater_static_object_detection/dataset/DUO/labels/test/*
 !projects/underwater_static_object_detection/dataset/DUO/labels/test/.gitkeep
+projects/underwater_static_object_detection/dataset/DUO/reports/visualized_*/
+projects/underwater_static_object_detection/results/training/
 examples/yolo_toy/outputs/*
 !examples/yolo_toy/outputs/README.md
 examples/yolo_toy/weights/*
@@ -31,3 +25,4 @@ __pycache__/
 .env
 .venv/
 .ipynb_checkpoints/
+.DS_Store
